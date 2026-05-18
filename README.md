@@ -1,5 +1,16 @@
 # MNIST Handwritten Digit Classifier from Scratch (Python 3)
 
+## 🎨 Interactive Live Inference Demo
+
+> **Visual Proof:** Here is the advanced model (`network2.py`) identifying a custom handwritten digit with high confidence:
+
+<p align="center">
+  <img src="demo.png" width="600" title="Neural Network Inference Demo">
+</p>
+
+The custom-built runtime canvas dynamically pipelines sketches directly into the live neural layers:
+...
+
 This repository features a complete, dual-phase deep learning laboratory focused on handwritten digit recognition using the classic MNIST dataset. The architectures and algorithms are fully refactored, modernized, and commented implementations based on the seminal work by **Michael Nielsen** in his book *Neural Networks and Deep Learning*.
 
 ## 🚀 Key Improvements & Features
