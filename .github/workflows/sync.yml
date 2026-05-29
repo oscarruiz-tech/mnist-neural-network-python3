@@ -1,0 +1,20 @@
+name: Sync to Hugging Face
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  sync-hf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout GitHub Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: true
+
+      - name: Push to Hugging Face Datasets
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          git push --force https://oscarruiztataje:$HF_TOKEN@huggingface.co/datasets/oscarruiztataje/mnist-neural-network-python3 main
